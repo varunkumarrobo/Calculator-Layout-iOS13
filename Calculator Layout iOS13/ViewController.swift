@@ -10,11 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet var outputLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+     
     }
+    
 
-
+    @IBAction func numberButton(_ sender: UIButton) {
+        
+        print(sender.titleLabel?.text! ?? "0")
+        
+         
+    }
+    
+    
+    @IBAction func calculationButton(_ sender: UIButton) {
+        
+        print(sender.titleLabel?.text! ?? "*"
+        )
+    }
+    
+    
 }
 
